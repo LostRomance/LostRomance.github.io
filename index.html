@@ -152,6 +152,223 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-intellij快捷键" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/12/14/intellij%E5%BF%AB%E6%8D%B7%E9%94%AE/">intellij快捷键</a>
+    </h1>
+  
+
+        
+        <a href="/2021/12/14/intellij%E5%BF%AB%E6%8D%B7%E9%94%AE/" class="archive-article-date">
+  	<time datetime="2021-12-14T05:07:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-12-14</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="intellij常用快捷键"><a href="#intellij常用快捷键" class="headerlink" title="intellij常用快捷键"></a>intellij常用快捷键</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//选中当前单词</span><br><span class="line">[ctrl+w]</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="intellij-shortcuts"><a href="#intellij-shortcuts" class="headerlink" title="intellij shortcuts"></a>intellij shortcuts</h2><table>
+<thead>
+<tr>
+<th>搜索</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>全局搜索</td>
+<td>[Ctrl+N]</td>
+</tr>
+<tr>
+<td>文本搜索</td>
+<td>[Ctrl+F]</td>
+</tr>
+<tr>
+<td>全局文本搜索</td>
+<td>[Ctrl+Shift+F]</td>
+</tr>
+<tr>
+<td>搜索所有文件</td>
+<td>[Shift+Shift]</td>
+</tr>
+<tr>
+<td>搜索类名</td>
+<td>[ctrl+shift+n]</td>
+</tr>
+<tr>
+<td><strong>查看信息</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>查看方法细节</td>
+<td>[ctrl+鼠标左键]</td>
+</tr>
+<tr>
+<td>查看重载</td>
+<td>(对着参数)[ctrl+p]</td>
+</tr>
+<tr>
+<td>查看继承</td>
+<td>[ctrl+h]</td>
+</tr>
+<tr>
+<td>查看哪里进行了使用</td>
+<td>[alt+f7]</td>
+</tr>
+<tr>
+<td>查找子类或实现方法</td>
+<td>[ctrl+alt+b]</td>
+</tr>
+<tr>
+<td>查看最近浏览的文件</td>
+<td>[ctrl+e]</td>
+</tr>
+<tr>
+<td>查看最近修改的代码</td>
+<td>[ctrl+shift+e]</td>
+</tr>
+<tr>
+<td>返回刚才查看的地方</td>
+<td>[ctrl+alt+&lt;-(方向键)]</td>
+</tr>
+<tr>
+<td><strong>添加代码</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>自动补全代码</td>
+<td>[ctrl+shifr+enter]</td>
+</tr>
+<tr>
+<td>获取提示（小灯泡）</td>
+<td>[alt+enter]</td>
+</tr>
+<tr>
+<td>generate</td>
+<td>[alt+ins]</td>
+</tr>
+<tr>
+<td>surround with</td>
+<td>[ctrl+alt+t]</td>
+</tr>
+<tr>
+<td>新增测试</td>
+<td>[ctrl+shift+e]</td>
+</tr>
+<tr>
+<td><strong>运行和调试</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>运行</td>
+<td>ctrl+shift+f10</td>
+</tr>
+<tr>
+<td><strong>编辑</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>变量，类等重命名(所有文件自动修改)</td>
+<td>[shift + f6]</td>
+</tr>
+<tr>
+<td>复制前一行(或者选中内容)</td>
+<td>[ctrl+d]</td>
+</tr>
+<tr>
+<td>格式化代码</td>
+<td>[ctrl+alt+L]</td>
+</tr>
+<tr>
+<td>删除当前行</td>
+<td>[ctrl+ x]</td>
+</tr>
+<tr>
+<td><strong>打印</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>public static void main(String[] args){}</td>
+<td>psvm</td>
+</tr>
+<tr>
+<td>System.out.println();</td>
+<td>sout</td>
+</tr>
+<tr>
+<td>System.out.println(“val = “+val);</td>
+<td>soutv</td>
+</tr>
+<tr>
+<td>public static final String</td>
+<td>psfs</td>
+</tr>
+</tbody></table>
+<p>1.5 优化JVM参数<br>点击help—&gt; edit Custom VM Options 或者直接打开idea安装目录下的bin -&gt;idea.exe.vmoptions,修改以下参数：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">-server</span><br><span class="line">-Xms500m</span><br><span class="line">-Xmx1024m</span><br><span class="line">-XX:ReservedCodeCacheSize=240m</span><br><span class="line">-XX:+UseConcMarkSweepGC</span><br><span class="line">-XX:SoftRefLRUPolicyMSPerMB=50</span><br><span class="line">-ea</span><br><span class="line">-Dsun.io.useCanonCaches=true</span><br><span class="line">-Djava.net.preferIPv4Stack=true</span><br><span class="line">-XX:+HeapDumpOnOutOfMemoryError</span><br><span class="line">-XX:-OmitStackTraceInFastThrow </span><br></pre></td></tr></table></figure>
+
+<p>-Xms500m 设置初时的内存数，设置合理值，增加该值可以提高 Java 程序的启动速度<br>-Xmx1024m 设置最大内存数，提高该值，可以减少内存 Garage 收集的频率，提高程序性<br>-Dsun.awt.keepWorkingSetOnMinimize=true 可以让 IDEA 最小化到任务栏时依然保持以占有的内存，当重新打开 IDEA，能够被快速显示</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ide</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/12/14/intellij%E5%BF%AB%E6%8D%B7%E9%94%AE/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Anoconda3-QuickCode" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -459,6 +676,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">python</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">ide</a>
               </li>
             
             <div class="clearfix"></div>
