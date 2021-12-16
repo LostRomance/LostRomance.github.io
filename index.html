@@ -156,6 +156,114 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-git-QuickCode" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/12/16/git-QuickCode/">git_QuickCode</a>
+    </h1>
+  
+
+        
+        <a href="/2021/12/16/git-QuickCode/" class="archive-article-date">
+  	<time datetime="2021-12-16T07:39:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-12-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="git命令"><a href="#git命令" class="headerlink" title="git命令"></a>git命令</h1><h2 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令"></a>常用指令</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&quot;&quot;&quot;信息相关&quot;&quot;&quot;</span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看git版本</span></span><br><span class="line">git --version</span><br><span class="line"><span class="meta">#</span><span class="bash"> 设置用户名和邮箱</span></span><br><span class="line">git config --global user.name &lt;YourName&gt;</span><br><span class="line">git config --global user.email &lt;YourEmail&gt;</span><br><span class="line">&quot;&quot;&quot;创建仓库相关&quot;&quot;&quot;</span><br><span class="line"><span class="meta">#</span><span class="bash"> 创建新仓库</span></span><br><span class="line">git init</span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看文件提交情况</span></span><br><span class="line">git status</span><br><span class="line">&quot;&quot;&quot;提交相关&quot;&quot;&quot;</span><br><span class="line"><span class="meta">#</span><span class="bash"> 添加单个文件</span></span><br><span class="line">git add &lt;fileName&gt;</span><br><span class="line"><span class="meta">#</span><span class="bash"> 添加所有文件(包括隐藏文件)</span></span><br><span class="line">git add .</span><br><span class="line"><span class="meta">#</span><span class="bash"> 提交</span></span><br><span class="line">git commit -m &quot;submit information&quot;</span><br><span class="line"><span class="meta">#</span><span class="bash"> 推送到远程仓库</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+
+<h2 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h2><p>和github或者gitee远程库相关的操作</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&quot;&quot;&quot;查看信息&quot;&quot;&quot;</span><br><span class="line">git remote</span><br><span class="line">git remote -v</span><br><span class="line">&quot;&quot;&quot;远程仓库的操作&quot;&quot;&quot;</span><br><span class="line"><span class="meta">#</span><span class="bash"> 直接把远程仓库拷贝下来作为一个新的本地仓库</span></span><br><span class="line">git clone &lt;url/ssh&gt;</span><br><span class="line"><span class="meta">#</span><span class="bash"> 将本地一个仓库连接远程,(前提是本地已经是一个仓库)</span></span><br><span class="line">git remote add &lt;repositoryName&gt; &lt;url/ssh&gt;</span><br><span class="line"><span class="meta">#</span><span class="bash"> 重命名本地远程仓库, 分支也会跟着变化，放心</span></span><br><span class="line">git remote rename &lt;oldName&gt; &lt;newName&gt;</span><br><span class="line"><span class="meta">#</span><span class="bash"> 修改本地某个名字的仓库的指向</span></span><br><span class="line">git remote set-url &lt;newName&gt; &lt;newUrl/newSsh&gt;</span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除本地的某个远程仓库</span></span><br><span class="line">git remote rm &lt;repositoryName&gt;</span><br><span class="line">&quot;&quot;&quot;远程仓库中数据的操作&quot;&quot;&quot;</span><br><span class="line"><span class="meta">#</span><span class="bash"> 获取远程仓库中的最新数据</span></span><br><span class="line">git fetch &lt;repositoryName&gt;</span><br><span class="line"><span class="meta">#</span><span class="bash"> 自动获取和合并到当前分支</span></span><br><span class="line">git pull	# 相当于git fetch之后紧跟一个fit merge</span><br><span class="line">git pull &lt;repositoryName&gt; &lt;branch&gt;</span><br><span class="line">git pull &lt;repositoryName&gt; &lt;branch&gt; --allow-unrelated-histories	 # 若出现不同历史问题，可以强制合并</span><br><span class="line"><span class="meta">#</span><span class="bash"> 推送数据到远程仓库</span></span><br><span class="line">git push &lt;repositoryName&gt; &lt;branch&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&quot;&quot;&quot;查看信息&quot;&quot;&quot;</span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看分支列表</span></span><br><span class="line">git branch</span><br><span class="line">git branch -v	# 查看分支最后一次提交</span><br><span class="line">git branch --merged		# 查看哪些分支已经合并到当前分支，这些分支可以删除，因为已经合并过了</span><br><span class="line">git branch --no-merged	#查看未合并的分支，这些删除会报错</span><br><span class="line">&quot;&quot;&quot;分支管理&quot;&quot;&quot;</span><br><span class="line"><span class="meta">#</span><span class="bash"> 新建分支</span></span><br><span class="line">git branch &lt;name&gt;</span><br><span class="line"><span class="meta">#</span><span class="bash"> 新建分支并且切换</span></span><br><span class="line">git checkout -b &lt;newBranchName&gt;</span><br><span class="line">git checkout -b &lt;newBranchName&gt; &lt;basedBranchName&gt;</span><br><span class="line"><span class="meta">#</span><span class="bash"> 切换分支</span></span><br><span class="line">git checkout &lt;branchName&gt;</span><br><span class="line"><span class="meta">#</span><span class="bash"> 合并至分支</span></span><br><span class="line">git merge &lt;fromBranchName&gt;	# 采用快速合并方法，一般会将当前分支直接指向fromBranchName分支</span><br><span class="line">git merge --no-ff &lt;fromBranchName&gt;	# 不采用快速合并，正常合并</span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除分支</span></span><br><span class="line">git branch -d &lt;branchName&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="版本回滚"><a href="#版本回滚" class="headerlink" title="版本回滚"></a>版本回滚</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># ToDo</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="创建公钥"><a href="#创建公钥" class="headerlink" title="创建公钥"></a>创建公钥</h2><p>新电脑如果想要clone一个私有项目，则需要在项目中添加公钥</p>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 快速确认自己是否已拥有密钥：</span></span><br><span class="line">cd ~/.ssh</span><br><span class="line">ls</span><br><span class="line"><span class="meta">#</span><span class="bash"> 如果没有目录，或者目录下没有&lt;id_dsa&gt;(私钥)和&lt;id_dsa.pub&gt;(公钥)文件,说明没有生成过秘钥</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 创建秘钥</span></span><br><span class="line">ssh-keygen -o</span><br></pre></td></tr></table></figure>
+
+<h2 id="diff相关"><a href="#diff相关" class="headerlink" title="diff相关"></a>diff相关</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">(由于爬虫可能会被察觉到，断掉，所以采用正规渠道的命令获取内容)</span><br><span class="line"><span class="meta">#</span><span class="bash"> 可以看到补丁文件</span></span><br><span class="line">git show &lt;commit_code&gt;</span><br><span class="line"><span class="meta">#</span><span class="bash"> 可以看到打完补丁之后的源文件</span></span><br><span class="line">git show &lt;commit_code&gt;:&lt;path&gt;</span><br><span class="line">(可以通过脚本来实现不断爬虫)</span><br></pre></td></tr></table></figure>
+
+<h2 id="Ignore设置"><a href="#Ignore设置" class="headerlink" title="Ignore设置"></a>Ignore设置</h2><p>有很多文件我们是不需要进行保存的，比如intellij idea这个ide自动生成的.idea隐藏文件，会占用很大空间。这时候要用到.gitignore文件, 可以控制push的时候不进行上传。</p>
+<h3 id="快速操作"><a href="#快速操作" class="headerlink" title="快速操作"></a>快速操作</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># 新建gitignore文件</span><br><span class="line">touch .gitignore</span><br><span class="line"># windows下也可以手动创建一个文本文件，去掉后缀名命名为 .gitignore</span><br><span class="line"></span><br><span class="line"># 打开该文件</span><br><span class="line">vim .gitignore</span><br><span class="line"># windows下也可以手动打开，注意该文件是一个隐藏文件，找不到请百度</span><br><span class="line"></span><br><span class="line"># 修改文件内容</span><br><span class="line"># 将下文中常用模板的内容填入</span><br><span class="line"># 就完成了.gitignore文件的设置，下次提交的时候就不会提交这些不用上传的内容了</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="常用模板"><a href="#常用模板" class="headerlink" title="常用模板"></a>常用模板</h3><p>修改里面的内容，此处为参考模板</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># special	特殊文件</span><br><span class="line"></span><br><span class="line"># dependencies  依赖包文件</span><br><span class="line">/node_modules</span><br><span class="line"></span><br><span class="line"># production  打包文件</span><br><span class="line">/build</span><br><span class="line">/.idea</span><br><span class="line"></span><br><span class="line"># misc   mac自带隐藏文件</span><br><span class="line">.DS_Store</span><br><span class="line"># log	  日志文件</span><br><span class="line">npm-debug.log*</span><br></pre></td></tr></table></figure>
+
+<h3 id="常用的规则"><a href="#常用的规则" class="headerlink" title="常用的规则"></a>常用的规则</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">/mtk/ 		# 过滤整个文件夹</span><br><span class="line">*.zip 		# 过滤所有.zip文件</span><br><span class="line">/mtk/do.c 	# 过滤某个具体文件</span><br><span class="line"></span><br><span class="line">!src/   	# 不过滤该文件夹</span><br><span class="line">!*.zip   	# 不过滤所有.zip文件</span><br><span class="line">!/mtk/do.c 	# 不过滤该文件</span><br></pre></td></tr></table></figure>
+
+<p>以斜杠<code>/</code>开头表示目录；<br>以星号<code>*</code>通配多个字符；<br>以问号<code>?</code>通配单个字符<br>以方括号<code>&lt;&gt;</code>包含单个字符的匹配列表；<br>以叹号<code>!</code>表示不忽略(跟踪)匹配到的文件或目录；</p>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><ul>
+<li><p>规则1</p>
+<p><code>fd1/*</code><br> 说明：忽略目录 fd1 下的全部内容；注意，不管是根目录下的 /fd1/ 目录，还是某个子目录 /child/fd1/ 目录，都会被忽略；</p>
+</li>
+<li><p>规则2</p>
+<p><code>/fd1/*</code><br> 说明：忽略根目录下的 /fd1/ 目录的全部内容；</p>
+</li>
+<li><p>规则3<br><code> /*  !.gitignore  !/fw/bin/  !/fw/sf/</code><br> 说明：忽略全部内容，但是不忽略 .gitignore 文件、根目录下的 /fw/bin/ 和 /fw/sf/ 目录；</p>
+</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">quickcode</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Anaconda-QuickCode" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -195,6 +303,10 @@
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
+        		</li>
+      		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">anaconda</a>
         		</li>
@@ -412,6 +524,10 @@
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ide</a>
         		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">shortcuts</a>
+        		</li>
       		
 		</ul>
 	</div>
@@ -539,6 +655,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">anaconda</a>
               </li>
              
@@ -548,6 +668,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">ide</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">shortcuts</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
             
             <div class="clearfix"></div>
