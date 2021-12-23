@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Hexo</title>
+  <title>LostRomance&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="LostRomance&#39;s blog">
 <meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="LostRomance&#39;s blog">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="LostRomance&#39;s blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -66,11 +66,15 @@
     			
             
     			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
+    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">常用链接</a>
     			
             
     			
     			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
+    			
+            
+    			
+    			<a q-on="click: openSlider(e, 'others')" href="javascript:void(0)">其他</a>
     			
             
 		</nav>
@@ -284,7 +288,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="第一次使用Anaconda教程"><a href="#第一次使用Anaconda教程" class="headerlink" title="第一次使用Anaconda教程"></a>第一次使用Anaconda教程</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装完anaconda之后查看版本来确定是否安装成功</span></span><br><span class="line">conda -<span class="literal">-version</span></span><br><span class="line"><span class="comment">#（如果显示了版本号则说明安装好了，否则可以搜索“如何配置anaconda的环境变量”）</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 首先创建一个新的虚拟环境</span></span><br><span class="line">conda create -<span class="literal">-name</span> common python=<span class="number">3.6</span></span><br><span class="line"><span class="comment"># （命名为common,同时安装python3.6）</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 此时查看系统中拥有的虚拟环境</span></span><br><span class="line">conda env list</span><br><span class="line"><span class="comment"># （理论上能够看到base和common两个虚拟环境，其中base是自动生成的，带有*号的为当前选择的虚拟环境）</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 选择刚才创建好的虚拟环境</span></span><br><span class="line">source activate common          <span class="comment"># mac/linux下</span></span><br><span class="line">activate common                 <span class="comment"># windows下</span></span><br><span class="line"><span class="comment">#（可以再使用conda env list查看下效果）</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装需要的库，如numpy</span></span><br><span class="line">conda install numpy		<span class="comment"># 自动安装适合当前python版本的numpy，尽可能最新</span></span><br><span class="line">conda install numpy=<span class="number">1.4</span>		<span class="comment"># 自动安装适合当前python版本的numpy，自定义为版本1.4</span></span><br><span class="line"><span class="comment"># anaconda并不只会安装该库，还会帮你把它需要的所有库都安装好，这就是使用anaconda的一个优势</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看当前虚拟环境中的库</span></span><br><span class="line">conda list</span><br><span class="line"><span class="comment"># 可以看见当前虚拟环境中所有库信息</span></span><br></pre></td></tr></table></figure>
+        <h2 id="第一次使用Anaconda教程"><a href="#第一次使用Anaconda教程" class="headerlink" title="第一次使用Anaconda教程"></a>第一次使用Anaconda教程</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装完anaconda之后查看版本来确定是否安装成功</span></span><br><span class="line">conda -<span class="literal">-version</span></span><br><span class="line"><span class="comment">#（如果显示了版本号则说明安装好了，否则可以搜索“如何配置anaconda的环境变量”）</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 首先创建一个新的虚拟环境</span></span><br><span class="line">conda create -<span class="literal">-name</span> common python=<span class="number">3.6</span></span><br><span class="line"><span class="comment"># （命名为common,同时安装python3.6）</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 此时查看系统中拥有的虚拟环境</span></span><br><span class="line">conda env list</span><br><span class="line"><span class="comment"># （理论上能够看到base和common两个虚拟环境，其中base是自动生成的，带有*号的为当前选择的虚拟环境）</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 选择刚才创建好的虚拟环境</span></span><br><span class="line">source activate common          <span class="comment"># mac/linux下</span></span><br><span class="line">activate common                 <span class="comment"># windows下</span></span><br><span class="line"><span class="comment">#（可以再使用conda env list查看下效果）</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装需要的库，如numpy</span></span><br><span class="line">conda install numpy		<span class="comment"># 自动安装适合当前python版本的numpy，尽可能最新</span></span><br><span class="line"><span class="comment"># 或者使用 conda install numpy=1.4	来自动安装适合当前python版本的numpy，自定义为版本1.4</span></span><br><span class="line"><span class="comment"># anaconda并不只会安装该库，还会帮你把它需要的所有库都安装好，这就是使用anaconda的一个优势</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看当前虚拟环境中的库</span></span><br><span class="line">conda list</span><br><span class="line"><span class="comment"># 可以看见当前虚拟环境中所有库信息</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="Anaconda命令"><a href="#Anaconda命令" class="headerlink" title="Anaconda命令"></a>Anaconda命令</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">//查看信息</span><br><span class="line">conda -<span class="literal">-version</span></span><br><span class="line">conda update conda</span><br><span class="line">conda -<span class="literal">-help</span></span><br><span class="line">环境列表</span><br><span class="line">conda env list</span><br><span class="line"></span><br><span class="line">//环境管理</span><br><span class="line">创建新环境</span><br><span class="line">conda create -<span class="literal">-name</span> &lt;env_name&gt; &lt;package_names&gt;</span><br><span class="line">切换环境</span><br><span class="line">source activate &lt;env_name&gt;          mac/linux</span><br><span class="line">activate &lt;env_name&gt;                 windows</span><br><span class="line">退出环境</span><br><span class="line">source deactivate                   mac/linux</span><br><span class="line">deactivate                          windows</span><br><span class="line">复制环境</span><br><span class="line">conda create -<span class="literal">-name</span> &lt;new_env_name&gt; -<span class="literal">-clone</span> &lt;copied_env_name&gt;</span><br><span class="line">删除环境</span><br><span class="line">conda remove -<span class="literal">-name</span> &lt;env_name&gt; -<span class="literal">-all</span></span><br><span class="line"></span><br><span class="line">//包管理</span><br><span class="line">查看包信息</span><br><span class="line">conda list</span><br><span class="line">查找可用包</span><br><span class="line">conda search &lt;text&gt;                                     模糊查找</span><br><span class="line">conda search -<span class="literal">-full</span><span class="literal">-name</span> &lt;package_full_name&gt;            精确查找</span><br><span class="line">精确查找包</span><br><span class="line">conda search -<span class="literal">-full</span><span class="literal">-name</span> &lt;package_full_name&gt;</span><br><span class="line">当前环境安装包</span><br><span class="line">conda install &lt;package_name&gt;=&lt;version&gt;          conda安装</span><br><span class="line">conda install -<span class="literal">-name</span> &lt;env_name&gt; &lt;package_name&gt;              对于某个环境安装包</span><br><span class="line">conda install <span class="literal">-c</span> channel_name package_name 如果默认包找不到则需要到其他channel中寻找下载</span><br><span class="line">(example:   conda install torchvision <span class="literal">-c</span> pytorch) </span><br><span class="line">更新包</span><br><span class="line">conda update -<span class="literal">-all</span></span><br><span class="line">conda update &lt;package_name&gt;             更新指定包</span><br><span class="line">卸载包</span><br><span class="line">conda remove &lt;package_name&gt;</span><br><span class="line">conda remove -<span class="literal">-name</span> &lt;env_name&gt; &lt;package_name&gt;               对于某个环境卸载包</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
@@ -620,21 +624,29 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
       
     
+      
+      
+      
+    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 25%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
+      <li style="width: 25%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">常用链接</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 25%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      
+        
+      
+      <li style="width: 25%" q-on="click: openSlider(e, 'others')"><a href="javascript:void(0)" q-class="active:others">其他</a></li>
       
         
     </ul>
@@ -727,7 +739,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="http://www.bt.cn/tools/encrybase.html" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>加密小工具</a>
+              <a href="https://www.r2coding.com/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>生发秘诀</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://www.bt.cn/tools/encrybase.html" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>加密工具</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://docs.qq.com/sheet/DRU5MWHZCTHFGQnhM" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>知识百科</a>
             </li>
           
         </ul>
@@ -738,7 +758,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">ZXlKMklqb2dJaklpTENBaWNITWlPaUFpSWl3Z0ltRmtaQ0k2SUNJeE5Ea3VNamd1TXpZdU1qRWlMQ0FpY0c5eWRDSTZJRE0xTXpJekxDQWlZV2xrSWpvZ01Dd2dJblI1Y0dVaU9pQWlJaXdnSW01bGRDSTZJQ0ozY3lJc0lDSndZWFJvSWpvZ0lpOVRNRVEzYlZGU1ZpOGlMQ0FpYUc5emRDSTZJQ0lpTENBaWFXUWlPaUFpTWpVMk5HRmlaV010TldOaE1pMHhNV1ZqTFdFMFpUVXROVFl3TURBek5EYzJPR1pqSWl3Z0luUnNjeUk2SUNKdWIyNWxJbjA9</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">致力于创造浪漫的一个普通人</div>
   	  	
     	</section>
     
